@@ -1,0 +1,408 @@
+/* ================================================
+   ANIMATIONS & KEYFRAMES
+   ================================================ */
+
+/**
+ * FADE ANIMATIONS
+ * Entrées progressives et sorties fluides
+ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/**
+ * SLIDE ANIMATIONS
+ * Mouvements linéaires horizontaux/verticaux
+ */
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+
+/**
+ * FADE-UP ANIMATION
+ * Combinaison fade + slide up pour entrées fluides
+ */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/**
+ * SCALE ANIMATIONS
+ * Zooms et expansions
+ */
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes heroZoom {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/**
+ * BOUNCE ANIMATIONS
+ * Rebonds et mouvements dynamiques
+ */
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes scroll-bounce {
+    0%, 100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0.3;
+        transform: translateY(10px);
+    }
+}
+
+/**
+ * FLOAT ANIMATIONS
+ * Mouvements flottants circulaires
+ */
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes float-reverse {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+/**
+ * PULSE ANIMATIONS
+ * Pulsations et respirations
+ */
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.15;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.25;
+        transform: scale(1.05);
+    }
+}
+
+/**
+ * SHIMMER ANIMATION
+ * Effet de brillance/scintillement
+ */
+
+@keyframes shimmer {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/**
+ * GLOW ANIMATION
+ * Effet de rayonnement
+ */
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(27, 77, 62, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(27, 77, 62, 0.4);
+    }
+}
+
+/**
+ * SPIN ANIMATION
+ * Rotation continue
+ */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/**
+ * UNDERLINE ANIMATION
+ * Animation d'underline pour liens
+ */
+
+@keyframes underline-expand {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/**
+ * HEARTBEAT ANIMATION
+ * Pulsation cardiaque
+ */
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    10%, 30% {
+        transform: scale(0.9);
+    }
+    20%, 50%, 80% {
+        transform: scale(1);
+    }
+    40%, 60% {
+        transform: scale(1.1);
+    }
+}
+
+/**
+ * ROTATION ANIMATIONS
+ * Rotations continues
+ */
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/**
+ * WAVE ANIMATION
+ * Effet de vague
+ */
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/**
+ * BLUR ANIMATIONS
+ * Flou progressif
+ */
+
+@keyframes blurOut {
+    from {
+        opacity: 1;
+        filter: blur(0);
+    }
+    to {
+        opacity: 0;
+        filter: blur(10px);
+    }
+}
+
+@keyframes blurIn {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+/**
+ * APPEARANCE ANIMATIONS
+ * Apparitions spécialisées
+ */
+
+@keyframes flip-in {
+    from {
+        opacity: 0;
+        transform: perspective(400px) rotateY(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: perspective(400px) rotateY(0deg);
+    }
+}
+
+@keyframes flip-out {
+    from {
+        opacity: 1;
+        transform: perspective(400px) rotateY(0deg);
+    }
+    to {
+        opacity: 0;
+        transform: perspective(400px) rotateY(90deg);
+    }
+}
+
+/**
+ * UTILITY ANIMATION CLASSES
+ */
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease;
+}
+
+.animate-slide-in-up {
+    animation: slideInUp 0.6s ease;
+}
+
+.animate-slide-in-down {
+    animation: slideInDown 0.6s ease;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.6s ease;
+}
+
+.animate-bounce {
+    animation: bounce 1s ease infinite;
+}
+
+.animate-pulse {
+    animation: pulse 2s ease infinite;
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+.animate-glow {
+    animation: glow 2s ease infinite;
+}
