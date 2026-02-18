@@ -24,6 +24,31 @@
     z-index: 0;
 }
 
+/* Background Images per Service */
+.service-hero-bg[data-image="jardins-prives"] {
+    background-image: url('https://images.unsplash.com/photo-1552684052-8b9a9a2e4d5f?w=1400&h=600&fit=crop');
+}
+
+.service-hero-bg[data-image="amenagements"] {
+    background-image: url('https://images.unsplash.com/photo-1553729544-f1b40eb12633?w=1400&h=600&fit=crop');
+}
+
+.service-hero-bg[data-image="jardins-japonais"] {
+    background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1400&h=600&fit=crop');
+}
+
+.service-hero-bg[data-image="jardins-tropicaux"] {
+    background-image: url('https://images.unsplash.com/photo-1577720643272-265f434884a8?w=1400&h=600&fit=crop');
+}
+
+.service-hero-bg[data-image="modelisation"] {
+    background-image: url('https://images.unsplash.com/photo-1625225386308-1c2f24b37f0c?w=1400&h=600&fit=crop');
+}
+
+.service-hero-bg[data-image="palettes"] {
+    background-image: url('https://images.unsplash.com/photo-1525809036592-cdc8a18da4a9?w=1400&h=600&fit=crop');
+}
+
 .service-hero::before {
     content: '';
     position: absolute;
