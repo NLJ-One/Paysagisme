@@ -97,7 +97,7 @@
     }
 
     .service-card {
-        min-height: auto;
+        min-height: unset;
     }
 
     /* About */
@@ -254,7 +254,7 @@
     }
 
     .service-card {
-        min-height: auto;
+        min-height: unset;
     }
 
     .service-image {
@@ -302,7 +302,7 @@
     }
 
     .step-content {
-        min-height: auto;
+        min-height: unset;
         padding: 1.5rem;
     }
 
@@ -461,7 +461,7 @@
 
     .step-content {
         padding: 1rem;
-        min-height: auto;
+        min-height: unset;
     }
 
     .step-title {

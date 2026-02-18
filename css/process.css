@@ -129,8 +129,8 @@
     display: none;
 }
 
-/* Animation */
-.process-step {
+/* Animation d'apparition au chargement */
+.process-step:not(:focus) {
     animation: fadeInUp 0.6s ease backwards;
 }
 

@@ -56,19 +56,19 @@
     gap: 1rem;
 }
 
-.newsletter-input {
+.news letter-input {
     padding: 0.8rem;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 0.4rem;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
+    background: rgba(255, 255, 255, 0.25);
+    color: #0D3A36;
     font-size: 0.9rem;
+    font-weight: 700;
     transition: all var(--transition-fast);
 }
 
 .newsletter-input::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .newsletter-input:focus {
@@ -126,9 +126,10 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.18);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
+    color: #FFFFFF;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;

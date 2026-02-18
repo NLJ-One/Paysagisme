@@ -255,8 +255,8 @@
     z-index: 0;
 }
 
-/* Animation d'apparition des cartes */
-.service-card {
+/* Animation d'apparition des cartes au chargement */
+.service-card:not(:focus) {
     animation: fadeInUp 0.6s ease backwards;
 }
 
