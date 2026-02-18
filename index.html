@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaëlle Martin - Designer Paysagiste</title>
+    <title>Noah Jean-Louis - Design Paysager</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,14 +15,14 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <span class="logo-icon">🌿</span>
-                    <span class="logo-text">Gaëlle Martin</span>
+                    <span class="logo-text">Noah Jean-Louis</span>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link">À propos</a></li>
                     <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#apropos" class="nav-link">À propos</a></li>
+                    <li><a href="#processus" class="nav-link">Processus</a></li>
                     <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
                 </ul>
                 <button class="mobile-menu-btn">
@@ -37,19 +37,18 @@
     <!-- Hero Section -->
     <section id="accueil" class="hero">
         <div class="hero-background">
+            <video autoplay muted loop class="hero-video" playsinline>
+                <source src="https://images.unsplash.com/photo-1564432842814-ce8b81b9b814?w=1400&h=900&fit=crop" type="video/mp4">
+            </video>
+            <img src="https://images.unsplash.com/photo-1552684052-8b9a9a2e4d5f?w=1400&h=900&fit=crop" alt="Jardin japonais tropical" class="hero-image">
             <div class="hero-overlay"></div>
-            <img src="https://images.unsplash.com/photo-1564432842814-ce8b81b9b814?w=1200&h=800&fit=crop" alt="Jardin moderne" class="hero-image">
         </div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Créer des espaces de vie harmonieux</h1>
-                <p class="hero-subtitle">Design paysagiste - Transformation d'espaces extérieurs avec élégance et durabilité</p>
-                <a href="#portfolio" class="btn btn-primary">Découvrir mon travail</a>
+                <h1 class="hero-title">Design Paysager<br>Japonais & Tropical</h1>
+                <p class="hero-subtitle">Créer des espaces harmonieux, vivants et intemporels</p>
+                <a href="#portfolio" class="btn btn-primary">Découvrir mes projets</a>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-arrow">↓</div>
         </div>
     </section>
 
@@ -57,68 +56,67 @@
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">PORTFOLIO</span>
-                <h2 class="section-title">Réalisations récentes</h2>
-                <p class="section-description">Découvrez une sélection de mes projets de transformation d'espaces extérieurs</p>
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-description">Découvrez une sélection de mes créations paysagères</p>
             </div>
 
             <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="residential">
+                <div class="portfolio-item" data-project="1">
                     <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1585299836669-11d7a9620ffa?w=600&h=600&fit=crop" alt="Jardin résidentiel moderne">
+                        <img src="https://images.unsplash.com/photo-1585299836669-11d7a9620ffa?w=600&h=600&fit=crop" alt="Jardin zen japonais">
                         <div class="portfolio-overlay">
-                            <h3>Jardin Résidentiel Moderne</h3>
-                            <p>Aménagement paysager complet avec terrasse contemporaine</p>
+                            <h3>Jardin Zen Urbain</h3>
+                            <p>Intégration minimaliste & végétation contrastée</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="commercial">
+                <div class="portfolio-item" data-project="2">
                     <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1577720643272-265f434884a8?w=600&h=600&fit=crop" alt="Cour d'entreprise">
+                        <img src="https://images.unsplash.com/photo-1577720643272-265f434884a8?w=600&h=600&fit=crop" alt="Cour tropicale">
                         <div class="portfolio-overlay">
-                            <h3>Espaces Professionnels</h3>
-                            <p>Cour d'entreprise transformée en espace de détente</p>
+                            <h3>Oasis Tropicale</h3>
+                            <p>Végétation luxuriante & bassins d'eau</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="garden">
+                <div class="portfolio-item" data-project="3">
                     <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1584614649955-8787a60e5de4?w=600&h=600&fit=crop" alt="Jardin secret">
+                        <img src="https://images.unsplash.com/photo-1584614649955-8787a60e5de4?w=600&h=600&fit=crop" alt="Terrasse épurée">
                         <div class="portfolio-overlay">
-                            <h3>Jardin Secret</h3>
-                            <p>Création d'un refuge verdoyant et intimiste</p>
+                            <h3>Terrasse Minimaliste</h3>
+                            <p>Équilibre pierre & végétation</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="residential">
+                <div class="portfolio-item" data-project="4">
                     <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&h=600&fit=crop" alt="Terrasse épurée">
+                        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&h=600&fit=crop" alt="Jardin contemporain">
                         <div class="portfolio-overlay">
-                            <h3>Terrasse Épurée</h3>
-                            <p>Minimalisme et nature : un parfait équilibre</p>
+                            <h3>Jardin Contemporain</h3>
+                            <p>Fusion japonaise & chaleur méditerranéenne</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="garden">
+                <div class="portfolio-item" data-project="5">
                     <div class="portfolio-image">
                         <img src="https://images.unsplash.com/photo-1611694697533-ddc8786a4fda?w=600&h=600&fit=crop" alt="Allée paysagère">
                         <div class="portfolio-overlay">
-                            <h3>Allée Paysagère</h3>
-                            <p>Circulations fluidifiées, espaces retravaillés</p>
+                            <h3>Allée Harmonieuse</h3>
+                            <p>Circulation méditative & ambiance immersive</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item" data-category="commercial">
+                <div class="portfolio-item" data-project="6">
                     <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1552680703-b58356b13eb2?w=600&h=600&fit=crop" alt="Oasis urbaine">
+                        <img src="https://images.unsplash.com/photo-1552680703-b58356b13eb2?w=600&h=600&fit=crop" alt="Jardin tropical">
                         <div class="portfolio-overlay">
-                            <h3>Oasis Urbaine</h3>
-                            <p>Biodiversité et nature en contexte urbain</p>
+                            <h3>Jardin Tropical Raffiné</h3>
+                            <p>Biodiversité et délicatesse esthétique</p>
                         </div>
                     </div>
                 </div>
@@ -130,46 +128,45 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">MES SERVICES</span>
-                <h2 class="section-title">Accompagnement complet</h2>
-                <p class="section-description">Une expertise holistique pour transformer vos espaces extérieurs</p>
+                <h2 class="section-title">Services</h2>
+                <p class="section-description">Une approche holistique et personnalisée</p>
             </div>
 
             <div class="services-grid">
                 <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Jardins Privés</h3>
+                    <p>Conception sur-mesure de jardins résidentiels fusion japonais-tropical</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Aménagements Professionnels</h3>
+                    <p>Espaces d'entreprise, hôtels, restaurants avec identité paysagère</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌊</div>
+                    <h3>Jardins Japonais</h3>
+                    <p>Jardins zen contemporains : minimalisme, équilibre, spiritualité</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌺</div>
+                    <h3>Jardins Tropicaux</h3>
+                    <p>Luxuriance adaptée au climat français, bassins et fontaines</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📐</div>
+                    <h3>Modélisation 3D</h3>
+                    <p>Plans 2D/3D, visualisations et recommandations techniques</p>
+                </div>
+
+                <div class="service-card">
                     <div class="service-icon">🎨</div>
-                    <h3>Conception & Design</h3>
-                    <p>Création de concepts innovants et esthétiques adaptés à vos envies et à votre environnement</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🌱</div>
-                    <h3>Aménagement Paysager</h3>
-                    <p>Plantation, disposition d'éléments hardscape, création d'ambiances naturelles et harmonieuses</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">💡</div>
-                    <h3>Mise en scène d'espaces</h3>
-                    <p>Éclairage extérieur, mobilier design, irrigation intelligente pour des espaces vivables</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🌿</div>
-                    <h3>Paysagisme durable</h3>
-                    <p>Solutions écologiques, gestion des eaux, biodiversité et respect de l'environnement</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🏗️</div>
-                    <h3>Coordination</h3>
-                    <p>Gestion complète du projet, coordination avec les prestataires et respect des délais</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🔍</div>
-                    <h3>Consultation</h3>
-                    <p>Audit paysager, recommandations d'amélioration et suivi entretien</p>
+                    <h3>Palettes Végétales</h3>
+                    <p>Sélection des plantes, compositions chromatiques et saisonnières</p>
                 </div>
             </div>
         </div>
@@ -179,71 +176,77 @@
     <section id="apropos" class="about">
         <div class="container">
             <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1494378254649-91cabc5fb567?w=500&h=600&fit=crop" alt="Noah Jean-Louis">
+                </div>
                 <div class="about-text">
-                    <span class="section-tag">À PROPOS</span>
-                    <h2>Passionnée par la nature</h2>
-                    <p>Avec plus de 10 années d'expérience en design paysagiste, je conçois des espaces qui racontent des histoires. Chaque projet est une opportunité de créer l'équilibre parfait entre esthétique, fonctionnalité et respect de l'environnement.</p>
-                    <p>Ma démarche combine créativité, expertise technique et écoute attentive de vos besoins. Je crois que un beau jardin est avant tout un jardin où l'on aime vivre.</p>
+                    <h2>Philosophie du Design</h2>
+                    <p>Mon approche paysagère fusionne deux univers : la sérénité minimaliste japonaise et la chaleur généreuse de la flore tropicale. Chaque projet est une quête d'équilibre.</p>
                     
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">150+</span>
-                            <span class="stat-label">Projets réalisés</span>
+                    <div class="philosophy-points">
+                        <div class="philosophy-item">
+                            <h4>Équilibre</h4>
+                            <p>Entre minimalisme et luxuriance, ombre et lumière, tradition et innovation</p>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Années d'expérience</span>
+                        <div class="philosophy-item">
+                            <h4>Durabilité</h4>
+                            <p>Respect de l'environnement, plantes adaptées au climat, gestion écologique</p>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">95%</span>
-                            <span class="stat-label">Clients satisfaits</span>
+                        <div class="philosophy-item">
+                            <h4>Authenticité</h4>
+                            <p>Écoute du lieu et du client, designs intemporels, qualité des matériaux</p>
                         </div>
                     </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1494378254649-91cabc5fb567?w=500&h=600&fit=crop" alt="Designer paysagiste au travail">
+
+                    <p class="about-cta">Parlons de votre vision paysagère.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Process Section -->
-    <section class="process">
+    <section id="processus" class="process">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">PROCESSUS</span>
-                <h2 class="section-title">Comment je travaille</h2>
+                <h2 class="section-title">Processus</h2>
+                <p class="section-description">Une création collaborative, étape par étape</p>
             </div>
 
             <div class="process-steps">
                 <div class="process-step">
                     <div class="step-number">01</div>
-                    <h3>Consultation initiale</h3>
-                    <p>Écoute de vos besoins, visite du site et définition des objectifs</p>
+                    <h3>Rencontre & Découverte</h3>
+                    <p>Écoute de votre vision, visite du site, analyse du contexte</p>
                 </div>
-
-                <div class="process-arrow">→</div>
 
                 <div class="process-step">
                     <div class="step-number">02</div>
-                    <h3>Concept créatif</h3>
-                    <p>Développement du concept, esquisses et propositions paysagères</p>
+                    <h3>Esquisses Initiales</h3>
+                    <p>Croquis, concepts visuels, première direction paysagère</p>
                 </div>
-
-                <div class="process-arrow">→</div>
 
                 <div class="process-step">
                     <div class="step-number">03</div>
-                    <h3>Réalisation</h3>
-                    <p>Exécution du projet respectant votre vision et budget</p>
+                    <h3>Conception Détaillée</h3>
+                    <p>Plans 2D/3D, modélisations, ajustements collaboratifs</p>
                 </div>
-
-                <div class="process-arrow">→</div>
 
                 <div class="process-step">
                     <div class="step-number">04</div>
-                    <h3>Entretien</h3>
-                    <p>Suivi régulier et conseils pour préserver votre espace</p>
+                    <h3>Palettes Végétales</h3>
+                    <p>Sélection des plantes, essences, textures, floraisons</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <h3>Réalisation</h3>
+                    <p>Exécution du projet, coordination technique, respect des délais</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">06</div>
+                    <h3>Suivi & Entretien</h3>
+                    <p>Accompagnement initial, conseils de maintenance à long terme</p>
                 </div>
             </div>
         </div>
@@ -253,26 +256,23 @@
     <section class="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Ce que disent mes clients</h2>
+                <h2 class="section-title">Témoignages</h2>
             </div>
 
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <div class="rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Gaëlle a transformé notre jardin en véritable paradis. Son écoute et sa créativité ont dépassé nos attentes. Nous adorons notre nouvel espace !"</p>
-                    <p class="testimonial-author">— Marie Lefebvre</p>
+                    <p class="testimonial-text">"Noah a capturé notre envie d'un jardin à la fois zen et vibrant. Chaque détail respire l'équilibre."</p>
+                    <p class="testimonial-author">— Marie & Pierre Dubois</p>
                 </div>
 
                 <div class="testimonial-card">
-                    <div class="rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Professionnalisme exemplaire. Les délais ont été respectés et la qualité du travail est exceptionnelle. Je recommande vivement !"</p>
-                    <p class="testimonial-author">— Jean Dupont</p>
+                    <p class="testimonial-text">"Un véritable artiste. Notre jardin d'entreprise est devenu un havre de paix, l'endroit où l'on aime se ressourcer."</p>
+                    <p class="testimonial-author">— Claire Rousseau, Directrice</p>
                 </div>
 
                 <div class="testimonial-card">
-                    <div class="rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Au-delà des attentes. Gaëlle a créé un espace à la fois beau, fonctionnel et respectueux de l'environnement. Excellente collaboration."</p>
-                    <p class="testimonial-author">— Sophie Bernard</p>
+                    <p class="testimonial-text">"Au-delà de l'esthétique, c'est la qualité de l'exécution et l'écoute qui m'ont impressionné. Bravo."</p>
+                    <p class="testimonial-author">— Laurent Martin</p>
                 </div>
             </div>
         </div>
@@ -282,33 +282,32 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">CONTACT</span>
-                <h2 class="section-title">Discutons de votre projet</h2>
-                <p class="section-description">Vous avez un projet d'aménagement ? N'hésitez pas à me contacter</p>
+                <h2 class="section-title">Parlons de votre projet</h2>
+                <p class="section-description">Un première consultation pour explorer vos envies paysagères</p>
             </div>
 
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Parlons de votre vision</h3>
-                    <p>Je serais ravi de discuter de vos projets paysagers et de la manière dont je peux vous aider à créer l'espace de vos rêves.</p>
+                    <h3>Noah Jean-Louis</h3>
+                    <p>Designer Paysagiste - Spécialiste Jardins Japonais & Tropicaux</p>
 
                     <div class="contact-details">
                         <div class="contact-item">
-                            <span class="contact-label">📧 Email</span>
-                            <a href="mailto:contact@gaellemartin.fr">contact@gaellemartin.fr</a>
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:noah@paysagisme-design.fr">noah@paysagisme-design.fr</a>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-label">📱 Téléphone</span>
+                            <span class="contact-label">Téléphone</span>
                             <a href="tel:+33612345678">+33 (0)6 12 34 56 78</a>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-label">📍 Localisation</span>
-                            <p>Île-de-France - Interventions sur toute la région</p>
+                            <span class="contact-label">Localisation</span>
+                            <p>Île-de-France • Interventions régionales</p>
                         </div>
                     </div>
 
                     <div class="social-links">
-                        <a href="#" class="social-icon" title="Instagram">📧</a>
+                        <a href="#" class="social-icon" title="Instagram">📷</a>
                         <a href="#" class="social-icon" title="LinkedIn">💼</a>
                         <a href="#" class="social-icon" title="Pinterest">📌</a>
                     </div>
@@ -322,12 +321,19 @@
                         <input type="email" placeholder="Votre email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Type de projet">
+                        <select required>
+                            <option value="">Type de projet</option>
+                            <option value="prive">Jardin privé</option>
+                            <option value="professionnel">Espace professionnel</option>
+                            <option value="japonais">Jardin japonais</option>
+                            <option value="tropical">Jardin tropical</option>
+                            <option value="autre">Autre</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <textarea placeholder="Décrivez votre projet..." rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Envoyer mon message</button>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
                 </form>
             </div>
         </div>
@@ -338,8 +344,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Gaëlle Martin</h4>
-                    <p>Designer Paysagiste Professionnel</p>
+                    <h4>Noah Jean-Louis</h4>
+                    <p>Design Paysager • Japonnais & Tropical</p>
                 </div>
                 <div class="footer-section">
                     <h4>Navigation</h4>
@@ -347,22 +353,20 @@
                         <li><a href="#accueil">Accueil</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h4>Spécialités</h4>
                     <ul>
-                        <li><a href="#services">Design Paysager</a></li>
-                        <li><a href="#services">Aménagement</a></li>
-                        <li><a href="#services">Consultation</a></li>
-                        <li><a href="#services">Maintenance</a></li>
+                        <li><a href="#services">Jardins Japonais</a></li>
+                        <li><a href="#services">Jardins Tropicaux</a></li>
+                        <li><a href="#services">Modélisation 3D</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Gaëlle Martin - Tous droits réservés</p>
-                <p>Conçu avec 🌿 pour des espaces inspirants</p>
+                <p>&copy; 2026 Noah Jean-Louis • Design Paysager</p>
+                <p>Créé avec intention et respect de la nature</p>
             </div>
         </div>
     </footer>
