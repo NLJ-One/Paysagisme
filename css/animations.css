@@ -25,15 +25,10 @@
     }
 }
 
-/**
- * SLIDE ANIMATIONS
- * Mouvements linéaires horizontaux/verticaux
- */
-
 @keyframes slideInDown {
     from {
         opacity: 0;
-        transform: translateY(-30px);
+        transform: translateY(-25px);
     }
     to {
         opacity: 1;
@@ -44,7 +39,7 @@
 @keyframes slideInUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(25px);
     }
     to {
         opacity: 1;
@@ -55,7 +50,7 @@
 @keyframes slideInLeft {
     from {
         opacity: 0;
-        transform: translateX(-30px);
+        transform: translateX(-25px);
     }
     to {
         opacity: 1;
@@ -66,7 +61,7 @@
 @keyframes slideInRight {
     from {
         opacity: 0;
-        transform: translateX(30px);
+        transform: translateX(25px);
     }
     to {
         opacity: 1;
@@ -74,37 +69,16 @@
     }
 }
 
-@keyframes slideOutUp {
-    from {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-}
-
-/**
- * FADE-UP ANIMATION
- * Combinaison fade + slide up pour entrées fluides
- */
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
-/**
- * SCALE ANIMATIONS
- * Zooms et expansions
- */
 
 @keyframes scaleIn {
     from {
@@ -119,24 +93,19 @@
 
 @keyframes heroZoom {
     from {
-        transform: scale(1.1);
+        transform: scale(1.08);
     }
     to {
         transform: scale(1);
     }
 }
 
-/**
- * BOUNCE ANIMATIONS
- * Rebonds et mouvements dynamiques
- */
-
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-8px);
     }
 }
 
@@ -147,7 +116,9 @@
     }
     50% {
         opacity: 0.3;
-        transform: translateY(10px);
+        transform: translateY(8px);
+    }
+}
     }
 }
 

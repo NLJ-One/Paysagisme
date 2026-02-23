@@ -2,202 +2,141 @@
    RESPONSIVE DESIGN & MEDIA QUERIES
    ================================================ */
 
-/**
- * TABLET LANDSCAPE (1024px - 1440px)
- * Écrans hybrides et petits moniteurs
- */
-
-@media (max-width: 1440px) {
+/* Large Desktops */
+@media (min-width: 1440px) {
     .container {
-        max-width: 1200px;
-    }
-
-    .section-title {
-        font-size: 2.5rem;
-    }
-
-    .hero-title {
-        font-size: 4rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
+        max-width: 1280px;
     }
 }
 
-/**
- * TABLET PORTRAIT & LANDSCAPE (768px - 1024px)
- */
-
+/* Tablets & Small Desktops */
 @media (max-width: 1024px) {
-    html {
-        font-size: 15px;
-    }
-
     .container {
-        max-width: 900px;
-        padding: 0 20px;
+        padding: 0 var(--spacing-md);
     }
 
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .section-padding {
-        padding: 3rem 0 !important;
-    }
-
-    /* Hero */
     .hero {
-        height: 80vh;
-        margin-top: 60px;
+        min-height: 80vh;
+        margin-top: 65px;
     }
 
-    .hero-title {
-        font-size: 3rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-
-    .hero-cta-group {
-        gap: 1rem;
-    }
-
-    .btn-primary,
-    .btn-secondary {
-        padding: 0.8rem 1.5rem;
-        font-size: 0.9rem;
-    }
-
-    /* Navbar */
-    nav {
-        padding: 1rem 2rem;
-    }
-
-    nav ul {
-        gap: 1.5rem;
-    }
-
-    nav a {
-        font-size: 0.9rem;
-    }
-
-    /* Portfolio Grid */
+    /* Portfolio */
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 
-    /* Services Grid */
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    .service-card {
-        min-height: unset;
-    }
-
     /* About */
-    .about-container {
+    .about-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: var(--spacing-md);
     }
 
-    .about-image {
-        max-height: 400px;
-    }
-
-    .about-highlights {
+    .philosophy-points {
         grid-template-columns: 1fr;
     }
 
     /* Process */
-    .process-grid {
+    .process-steps {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .process-grid::before {
-        display: none;
-    }
-
-    .step-arrow {
-        display: none;
-    }
-
-    /* Testimonials */
-    .testimonials-container {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonial-card.featured {
-        grid-column: span 1;
-    }
-
     /* Contact */
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-
-    .form-row {
+    .contact-content {
         grid-template-columns: 1fr;
     }
 
     /* Footer */
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+    }
+}
+
+/* Mobile & Tablets */
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 65px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: white;
+        padding: var(--spacing-md);
+        box-shadow: var(--shadow-medium);
+        gap: 0;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: var(--spacing-sm) 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero-content {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Portfolio & Services */
+    .portfolio-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Process */
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stats */
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
     }
 
     .footer-bottom {
         flex-direction: column;
-        gap: 1.5rem;
         text-align: center;
     }
+
+    /* Spacing */
+    section {
+        padding: var(--spacing-xl) var(--spacing-sm) !important;
+    }
 }
-
-/**
- * MOBILE LANDSCAPE (599px - 768px)
- * Téléphones en mode paysage et petites tablettes
- */
-
-@media (max-width: 768px) {
-    html {
-        font-size: 14px;
-    }
-
-    .navbar-menu {
-        display: none;
-        position: fixed;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background: var(--dark-green);
-        flex-direction: column;
-        padding: 2rem;
-        z-index: 999;
-        max-height: calc(100vh - 70px);
-        overflow-y: auto;
-    }
-
-    .navbar-menu.active {
-        display: flex;
-    }
-
-    .navbar-menu a {
-        color: white;
-        padding: 1rem 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .navbar-menu a:last-child {
-        border-bottom: none;
-    }
-
-    .hamburger {
-        display: flex;
     }
 
     .hero {

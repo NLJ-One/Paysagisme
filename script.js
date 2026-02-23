@@ -66,9 +66,9 @@ const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 8px 24px rgba(27, 77, 62, 0.12)';
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.05)';
+        navbar.classList.remove('scrolled');
     }
 });
 

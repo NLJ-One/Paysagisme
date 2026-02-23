@@ -3,51 +3,51 @@
    ================================================ */
 
 .footer {
-    background: linear-gradient(135deg, var(--dark-green) 0%, #0F3D32 100%);
+    background: var(--dark-green);
     color: white;
-    padding: 4rem 2rem 2rem;
-    margin-top: 4rem;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-md) var(--spacing-md);
+    margin-top: 0;
 }
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
-    margin-bottom: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
 }
 
-.footer-section h3 {
+.footer-section h4 {
     font-family: 'Playfair Display', serif;
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-    color: #E8DCC8;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+    color: var(--light-sand);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
 }
 
 .footer-section a {
     display: block;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    margin-bottom: 0.8rem;
-    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
     transition: all var(--transition-fast);
+    line-height: 1.8;
 }
 
 .footer-section a:hover {
-    color: #E8DCC8;
-    transform: translateX(5px);
+    color: white;
+    padding-left: 5px;
 }
 
-.footer-about p {
+.footer-section p {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
 }
 
 .footer-newsletter {
@@ -96,15 +96,18 @@
 /* Footer Bottom */
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 2rem;
+    padding-top: var(--spacing-md);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
 }
 
-.footer-copyright {
+.footer-bottom p {
     color: rgba(255, 255, 255, 0.6);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    margin: 0;
 }
 
 .footer-links {

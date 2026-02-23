@@ -170,10 +170,6 @@
     box-shadow: var(--shadow-hover);
 }
 
-.service-card:hover .service-icon {
-    transform: rotate(12deg) scale(1.1);
-}
-
 /* ============================================
    Service Content (Text Section)
    ============================================ */
