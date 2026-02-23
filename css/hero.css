@@ -4,7 +4,7 @@
 
 .hero {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    animation: heroZoom 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation: heroZoom 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .hero-overlay {
@@ -34,7 +34,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(27, 77, 62, 0.4) 0%, rgba(91, 155, 161, 0.3) 100%);
+    background: linear-gradient(
+        135deg, 
+        rgba(15, 61, 47, 0.75) 0%, 
+        rgba(26, 87, 66, 0.65) 50%,
+        rgba(91, 155, 161, 0.55) 100%
+    );
     z-index: 1;
 }
 
@@ -81,40 +86,42 @@
     z-index: 2;
     text-align: center;
     color: white;
-    animation: fadeInUp 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s backwards;
-    max-width: 800px;
+    animation: fadeInUp 1s cubic-bezier(0.19, 1, 0.22, 1) 0.3s backwards;
+    max-width: 900px;
+    padding: 0 2rem;
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    letter-spacing: -1px;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    animation: slideInDown 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.5s backwards;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1.5px;
+    text-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
+    animation: slideInDown 1s cubic-bezier(0.19, 1, 0.22, 1) 0.5s backwards;
 }
 
 .hero-subtitle-main {
     display: block;
-    background: linear-gradient(135deg, #E8DCC8, #D4A574);
+    background: linear-gradient(135deg, #F4EFE7, #CDB495);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-size: 2.2rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: 400;
-    margin-top: 0.8rem;
+    margin-top: 1rem;
+    letter-spacing: -0.5px;
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: 300;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
     opacity: 0.95;
-    max-width: 700px;
+    max-width: 750px;
     margin: 2rem auto;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    animation: slideInUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.7s backwards;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: slideInUp 1s cubic-bezier(0.19, 1, 0.22, 1) 0.7s backwards;
     line-height: 1.8;
 }
 
@@ -124,7 +131,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    animation: fadeIn 1s ease 1s backwards;
+    animation: fadeIn 1s ease 0.9s backwards;
+    margin-top: 2.5rem;
 }
 
 .btn-secondary {
